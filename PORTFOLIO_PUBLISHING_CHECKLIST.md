@@ -7,7 +7,8 @@
 - [x] Upload Excel workbook `EV_Battery_Day1_Workbook.xlsx` and link it from README.
 - [ ] Upload five figures into `figures/` from the portfolio ZIP.
 - [x] Upload working Jupyter notebook `EV_Battery_Health_Degradation_Analysis.ipynb` (file verified; execution not independently retested).
-- [x] Publish four SQL Server view definitions exported from SSMS, distinct from the starter exercises (logical review completed; live execution not retested).
+- [x] Publish `Data_Quality_and_KPI_Validation.sql` as the supporting data-validation script.
+- [x] Publish four SQL Server view definitions exported from SSMS, distinct from the data-quality/KPI validation queries (logical review completed; live execution not retested).
 - [x] Upload three reviewed Power BI dashboard screenshots.
 - [x] Upload editable Power BI PBIX (confirmed present in GitHub; opening it in Desktop has not been independently retested).
 - [x] Validate GitHub README image paths after dashboard images arrive.
