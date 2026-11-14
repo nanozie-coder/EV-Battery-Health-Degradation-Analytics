@@ -70,6 +70,10 @@ The three screenshots below show the Power BI report pages built from **syntheti
 
 **Full-fleet correlations:** high-temperature days r = +0.183, age r = +0.062, and fast-charging share r = −0.088. These exploratory linear correlations do not establish causation.
 
+## SQL Server view definitions
+
+[**Review the four completed T-SQL views**](sql/README.md) — latest battery diagnostics, daily trends, early-warning screening, and integrated lifecycle and charging-exposure analysis. These scripts require pre-existing imported base tables, and were reviewed but not re-executed in a live SQL Server environment during publication.
+
 ## Engineering report
 
 [**Download EV Battery Engineering Case Study (Word)**](reports/EV_Battery_Engineering_Case_Study.docx) — six-page narrative report to accompany the Power BI dashboards. All findings use synthetic teaching data.
@@ -85,7 +89,7 @@ The three screenshots below show the Power BI report pages built from **syntheti
 ## Technical workflow
 
 1. **Excel** — data familiarisation, basic quality checks and KPI exercises.
-2. **SQL Server** — relational ingestion, battery diagnostics, latest-observation selection, early-warning indicators and integrated analysis views (developed in the working project).
+2. **SQL Server** — relational ingestion, battery diagnostics, latest-observation selection, early-warning indicators and integrated analysis views. [Four view-definition scripts](sql/README.md) are published and documented in dependency order.
 3. **Power BI** — three completed working dashboard pages: Fleet Health, Battery Lifecycle & Degradation, and Degradation Drivers & Risk Analysis.
 4. **Python** — independent dataset reconstruction, group summaries, correlations, permutation and leave-one-out sensitivity tests.
 
@@ -121,7 +125,12 @@ EV_Battery_Analytics/
 │   ├── README.md
 │   └── EV_Battery_Day1_Workbook.xlsx
 ├── sql/
-│   └── Day1_SQL_Server_Exercises.sql
+│   ├── README.md
+│   ├── Day1_SQL_Server_Exercises.sql
+│   ├── vw_BatteryDailyTrends.sql
+│   ├── vw_BatteryDiagnostics.sql
+│   ├── vw_BatteryEarlyWarning.sql
+│   └── vw_BatteryIntegratedAnalytics.sql
 ├── reports/
 │   ├── README.md
 │   └── EV_Battery_Engineering_Case_Study.docx
@@ -135,7 +144,7 @@ EV_Battery_Analytics/
 
 ## Outstanding local files to upload
 
-All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The starter SQL exercises are in `sql/`; the later SSMS view definitions have not yet been uploaded. The **engineering case-study report is available** in [`reports/`](reports/EV_Battery_Engineering_Case_Study.docx); the **Excel workbook is available** in [`excel/`](excel/EV_Battery_Day1_Workbook.xlsx); the [Jupyter notebook](notebooks/EV_Battery_Health_Degradation_Analysis.ipynb) is published. The final SQL Server views and additional standalone Python figures are still pending.
+All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The starter SQL exercises and four final SQL Server view definitions are now published in [`sql/`](sql/README.md). The **engineering case-study report is available** in [`reports/`](reports/EV_Battery_Engineering_Case_Study.docx); the **Excel workbook is available** in [`excel/`](excel/EV_Battery_Day1_Workbook.xlsx); the [Jupyter notebook](notebooks/EV_Battery_Health_Degradation_Analysis.ipynb) is published. All four final SQL Server view scripts are published; additional standalone Python figures are still pending.
 
 ## Boundaries and limitations
 
