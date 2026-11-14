@@ -46,11 +46,29 @@ The **NMC high-temperature-days / cycling-adjusted degradation** Pearson correla
 
 The standard Pearson p-value is approximately **0.00035**, but an exact conditional exercise that reassigns the single exposure among eight NMC packs gives a **two-sided permutation p-value of 0.125**. These calculations do not establish causality, fleet-wide risk or predictive failure probability.
 
-*Charts showing chemistry correlations and the BAT-018 sensitivity exercise are available in the downloadable portfolio package and will be added to `figures/`.*
+Additional Python chemistry-correlation and BAT-018 sensitivity charts are in the locally prepared portfolio pack; those specific PNGs have not yet been committed to `figures/`.
 
-## Visualisations
+## Power BI dashboard gallery
 
-*Fleet SOH, screening-distribution, and chemistry-degradation PNGs will be uploaded to `figures/`. The image files are not in the repository yet.*
+The following are screenshots of the three Power BI report pages, built from the **synthetic** battery datasets. Click each image to see it at full size.
+
+### Page 1 — Fleet Health & Early Warning
+
+![Fleet Health and Early Warning dashboard](powerbi/Fleet_Health_Dashboard.png)
+
+**Fleet overview:** 24 batteries, mean latest SOH 93.30%, 3 Priority Review packs, and an investigation register.
+
+### Page 2 — Battery Lifecycle & Degradation
+
+![Battery Lifecycle and Degradation dashboard with SYN-BAT-018 selected](powerbi/Battery_Lifecycle_Dashboard.png)
+
+**Selected battery: SYN-BAT-018.** Latest SOH 86.56%, cycling-adjusted decline 2.829 pp/100 EFC, 15 days at or above the illustrative 45°C threshold, and no days at or above the illustrative 45 mV imbalance threshold.
+
+### Page 3 — Degradation Drivers & Risk Analysis
+
+![Full-fleet degradation drivers and risk dashboard](powerbi/Degradation_Drivers_Dashboard.png)
+
+**Full-fleet correlations:** high-temperature days r = +0.183, age r = +0.062, and fast-charging share r = −0.088. These exploratory linear correlations do not establish causation.
 
 ## Technical workflow
 
@@ -68,7 +86,7 @@ python -m pip install pandas numpy scipy matplotlib
 python analysis/run_analysis.py
 ```
 
-The script reads `data/*.csv` and regenerates analytical tables and a summary JSON in `analysis/`. Figures and the tested notebook are still in the local portfolio package and have not yet been uploaded to GitHub.
+The script reads `data/*.csv` and regenerates analytical tables and a summary JSON in `analysis/`. The three Power BI dashboard screenshots are published above. Additional Python figures and the tested notebook are still in the local portfolio package and have not yet been uploaded to GitHub.
 
 ## Repository structure
 
@@ -84,13 +102,18 @@ EV_Battery_Analytics/
 │   └── DATA_DICTIONARY.md
 ├── analysis/
 │   └── run_analysis.py
+├── sql/
+│   └── Day1_SQL_Server_Exercises.sql
 └── powerbi/
-    └── README.md
+    ├── README.md
+    ├── Fleet_Health_Dashboard.png
+    ├── Battery_Lifecycle_Dashboard.png
+    └── Degradation_Drivers_Dashboard.png
 ```
 
 ## Outstanding local files to upload
 
-The author's **Power BI PBIX file and dashboard screenshots reside on their own computer** and are not currently in this GitHub repository. Add the reviewed `.pbix` (if suitable to share) and screenshots under `powerbi/` before claiming the interactive dashboards can be opened from this repository. The complete later SQL Server views and the starter SQL exercises have not yet been uploaded; these remain on the author's computer and in the local portfolio package, respectively.
+All **three approved Power BI screenshots are published** under `powerbi/` and displayed above. The editable **Power BI `.pbix` file is still on the author's computer**, and the report has not been published as an interactive dashboard in this repository. The starter SQL exercises are in `sql/`; the later SSMS view definitions have not yet been uploaded. The engineering report, Excel workbook and expanded Python notebook are also pending.
 
 ## Boundaries and limitations
 
