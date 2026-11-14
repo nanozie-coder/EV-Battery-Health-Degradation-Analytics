@@ -4,7 +4,7 @@
 - [x] Publish README and synthetic source datasets.
 - [x] Publish reproducible Python validation script.
 - [x] Upload report `EV_Battery_Engineering_Case_Study.docx` to `reports/` and link it from the README.
-- [ ] Upload Excel workbook `EV_Battery_Day1_Workbook.xlsx`.
+- [x] Upload Excel workbook `EV_Battery_Day1_Workbook.xlsx` and link it from README.
 - [ ] Upload five figures into `figures/` from the portfolio ZIP.
 - [ ] Upload tested Python notebook and original working notebook (optional).
 - [ ] Add SQL Server view definitions exported from SSMS; distinguish them from starter exercises.
