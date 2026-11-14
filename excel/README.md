@@ -1,8 +1,8 @@
 # Excel analysis workbook
 
-Upload the prepared Excel starter workbook here:
+Published workbook:
 
-- `EV_Battery_Day1_Workbook.xlsx` — initial Excel battery data exploration and KPI exercises. **Upload pending.**
+- [**EV_Battery_Day1_Workbook.xlsx**](EV_Battery_Day1_Workbook.xlsx) — initial Excel battery data exploration and KPI exercises. **Uploaded and verified in GitHub.**
 
 For the full synthetic source datasets, see [data/](../data/). These CSVs are already in the repository and do not need to be duplicated inside the Excel folder.
 
