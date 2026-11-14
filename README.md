@@ -46,17 +46,11 @@ The **NMC high-temperature-days / cycling-adjusted degradation** Pearson correla
 
 The standard Pearson p-value is approximately **0.00035**, but an exact conditional exercise that reassigns the single exposure among eight NMC packs gives a **two-sided permutation p-value of 0.125**. These calculations do not establish causality, fleet-wide risk or predictive failure probability.
 
-![Chemistry-level driver correlations](figures/04_correlation_by_chemistry.png)
-
-![Influence of BAT-018](figures/05_nmc_leave_one_out.png)
+*Charts showing chemistry correlations and the BAT-018 sensitivity exercise are available in the downloadable portfolio package and will be added to `figures/`.*
 
 ## Visualisations
 
-![Fleet latest SOH](figures/01_fleet_soh_by_battery.png)
-
-![Condition-screening distribution](figures/02_screening_distribution.png)
-
-![Chemistry-level degradation](figures/03_chemistry_degradation.png)
+*Fleet SOH, screening-distribution, and chemistry-degradation PNGs will be uploaded to `figures/`. The image files are not in the repository yet.*
 
 ## Technical workflow
 
@@ -74,35 +68,29 @@ python -m pip install pandas numpy scipy matplotlib
 python analysis/run_analysis.py
 ```
 
-The script reads `data/*.csv` and writes regenerated tabular outputs under `analysis/`. The chart PNGs in `figures/` are already included for reporting. The notebook in `notebooks/` is a separate tested statistical-validation notebook; the author's expanded interactive training notebook may be added later.
+The script reads `data/*.csv` and regenerates analytical tables and a summary JSON in `analysis/`. Figures and the tested notebook are still in the local portfolio package and have not yet been uploaded to GitHub.
 
 ## Repository structure
 
 ```text
 EV_Battery_Analytics/
 ├── README.md
-├── EV_Battery_Engineering_Case_Study.docx
-├── EV_Battery_Day1_Workbook.xlsx
+├── requirements.txt
+├── PORTFOLIO_PUBLISHING_CHECKLIST.md
 ├── data/
 │   ├── battery_master.csv
 │   ├── daily_telemetry.csv
 │   ├── charge_events.csv
 │   └── DATA_DICTIONARY.md
 ├── analysis/
-│   ├── run_analysis.py
-│   ├── battery_level_metrics.csv
-│   ├── correlation_summary.csv
-│   ├── nmc_leave_one_out.csv
-│   └── verified_summary.json
-├── figures/
-├── notebooks/EV_Battery_Python_Correlation_Validation.ipynb
-├── sql/Day1_SQL_Server_Exercises.sql
-└── powerbi/README.md
+│   └── run_analysis.py
+└── powerbi/
+    └── README.md
 ```
 
-## Screenshots and PBIX files still to be added
+## Outstanding local files to upload
 
-The author's **Power BI PBIX file and dashboard screenshots reside on their own computer** and are not included in this package. Add the reviewed `.pbix` (if suitable to share) and screenshots under `powerbi/` before claiming the interactive dashboards can be opened from this repository. The included SQL file is the starter SQL Server exercise set, not an export of all later locally created views.
+The author's **Power BI PBIX file and dashboard screenshots reside on their own computer** and are not currently in this GitHub repository. Add the reviewed `.pbix` (if suitable to share) and screenshots under `powerbi/` before claiming the interactive dashboards can be opened from this repository. The complete later SQL Server views and the starter SQL exercises have not yet been uploaded; these remain on the author's computer and in the local portfolio package, respectively.
 
 ## Boundaries and limitations
 
@@ -110,4 +98,4 @@ This synthetic learning project is illustrative, not a battery-failure or warran
 
 ## Deliverable
 
-Read [the engineering case study](EV_Battery_Engineering_Case_Study.docx) for the management summary, method, prioritized findings, follow-up checks and evidence limitations.
+The six-page engineering case study is available in the previously delivered local portfolio ZIP; the Word document has not been uploaded to this repository yet. See `PORTFOLIO_PUBLISHING_CHECKLIST.md` for remaining assets.
