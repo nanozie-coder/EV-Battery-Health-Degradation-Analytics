@@ -70,6 +70,10 @@ The three screenshots below show the Power BI report pages built from **syntheti
 
 **Full-fleet correlations:** high-temperature days r = +0.183, age r = +0.062, and fast-charging share r = −0.088. These exploratory linear correlations do not establish causation.
 
+## Engineering report
+
+[**Download EV Battery Engineering Case Study (Word)**](reports/EV_Battery_Engineering_Case_Study.docx) — six-page narrative report to accompany the Power BI dashboards. All findings use synthetic teaching data.
+
 ## Technical workflow
 
 1. **Excel** — data familiarisation, basic quality checks and KPI exercises.
@@ -104,6 +108,9 @@ EV_Battery_Analytics/
 │   └── run_analysis.py
 ├── sql/
 │   └── Day1_SQL_Server_Exercises.sql
+├── reports/
+│   ├── README.md
+│   └── EV_Battery_Engineering_Case_Study.docx
 └── powerbi/
     ├── README.md
     ├── EV_Battery_Health_Degradation_Analytics.pbix
@@ -114,7 +121,7 @@ EV_Battery_Analytics/
 
 ## Outstanding local files to upload
 
-All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The starter SQL exercises are in `sql/`; the later SSMS view definitions have not yet been uploaded. The engineering report, Excel workbook and expanded Python notebook are also pending.
+All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The starter SQL exercises are in `sql/`; the later SSMS view definitions have not yet been uploaded. The **engineering case-study report is available** in [`reports/`](reports/EV_Battery_Engineering_Case_Study.docx); the Excel workbook and expanded Python notebook are still pending.
 
 ## Boundaries and limitations
 
@@ -122,4 +129,4 @@ This synthetic learning project is illustrative, not a battery-failure or warran
 
 ## Deliverable
 
-The six-page engineering case study is available in the previously delivered local portfolio ZIP; the Word document has not been uploaded to this repository yet. See `PORTFOLIO_PUBLISHING_CHECKLIST.md` for remaining assets.
+Download the [six-page Engineering Case Study (Word)](reports/EV_Battery_Engineering_Case_Study.docx) for the management summary, engineering evidence, findings and proposed follow-up actions. The report is based on synthetic data. See [Portfolio Publishing Checklist](PORTFOLIO_PUBLISHING_CHECKLIST.md) for the remaining assets.
