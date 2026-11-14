@@ -80,7 +80,7 @@ The three screenshots below show the Power BI report pages built from **syntheti
 
 ## Excel analysis workbook
 
-[**Download EV Battery Day 1 Workbook (.xlsx)**](excel/EV_Battery_Day1_Workbook.xlsx) — supporting Excel workbook for initial battery data exploration and KPI exercises. The synthetic raw datasets are maintained separately in [`data/`](data/).
+[**Download EV Battery Data Exploration and KPI Analysis Workbook (.xlsx)**](excel/EV_Battery_Data_Exploration_and_KPI_Analysis.xlsx) — supporting Excel workbook for initial battery data exploration and KPI exercises. The synthetic raw datasets are maintained separately in [`data/`](data/).
 
 ## Jupyter analysis notebook
 
@@ -123,7 +123,7 @@ EV_Battery_Analytics/
 │   └── EV_Battery_Health_Degradation_Analysis.ipynb
 ├── excel/
 │   ├── README.md
-│   └── EV_Battery_Day1_Workbook.xlsx
+│   └── EV_Battery_Data_Exploration_and_KPI_Analysis.xlsx
 ├── sql/
 │   ├── README.md
 │   ├── Data_Quality_and_KPI_Validation.sql
@@ -144,7 +144,7 @@ EV_Battery_Analytics/
 
 ## Outstanding local files to upload
 
-All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The data-quality/KPI validation script and four final SQL Server view definitions are now published in [`sql/`](sql/README.md). The **engineering case-study report is available** in [`reports/`](reports/EV_Battery_Engineering_Case_Study.docx); the **Excel workbook is available** in [`excel/`](excel/EV_Battery_Day1_Workbook.xlsx); the [Jupyter notebook](notebooks/EV_Battery_Health_Degradation_Analysis.ipynb) is published. All four final SQL Server view scripts are published; additional standalone Python figures are still pending.
+All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The data-quality/KPI validation script and four final SQL Server view definitions are now published in [`sql/`](sql/README.md). The **engineering case-study report is available** in [`reports/`](reports/EV_Battery_Engineering_Case_Study.docx); the **Excel workbook is available** in [`excel/`](excel/EV_Battery_Data_Exploration_and_KPI_Analysis.xlsx); the [Jupyter notebook](notebooks/EV_Battery_Health_Degradation_Analysis.ipynb) is published. All four final SQL Server view scripts are published; additional standalone Python figures are still pending.
 
 ## Boundaries and limitations
 
