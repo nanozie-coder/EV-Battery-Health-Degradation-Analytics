@@ -6,11 +6,11 @@ Three pages were completed in Power BI Desktop for this independent synthetic ca
 2. **Battery Lifecycle & Degradation Analysis:** battery selector, SOH, EFC, temperature, voltage-spread trends and degradation KPIs.
 3. **Degradation Drivers & Risk Analysis:** scatter plots, chemistry filtering, correlation summaries and BAT-018 sensitivity exercise.
 
-**Important:** The actual Power BI Desktop `.pbix` and screenshots are still on the author's computer and **have not yet been uploaded to GitHub**. Please upload reviewed exports to this directory. Do not claim the interactive dashboard is published until a valid PBIX or a working live link is available.
+**Current status:** All three approved **PNG screenshots are uploaded** in this directory and embedded in the root README. The editable `.pbix` file remains on the author's computer and has **not** yet been uploaded. These images are static dashboard previews, not an interactive published report.
 
-Example screenshot names:
-- `fleet_health.png`
-- `battery_lifecycle.png`
-- `degradation_drivers.png`
+Verified dashboard screenshots:
+- [Fleet Health & Early Warning](Fleet_Health_Dashboard.png)
+- [Battery Lifecycle & Degradation — BAT-018 selected](Battery_Lifecycle_Dashboard.png)
+- [Degradation Drivers & Risk — full fleet](Degradation_Drivers_Dashboard.png)
 
 All screenshots must show synthetic project data only.
