@@ -1,6 +1,6 @@
 # SQL Server analytical views
 
-Four T-SQL `CREATE VIEW` scripts exported from the working **EVBatteryAnalytics** database in SQL Server Management Studio are now published here, alongside the starter exercises.
+Four T-SQL `CREATE VIEW` scripts exported from the working **EVBatteryAnalytics** database in SQL Server Management Studio are now published here, alongside a dedicated data-quality and KPI-validation script.
 
 ## Published scripts
 
@@ -11,7 +11,7 @@ Run the view scripts in this dependency order:
 3. [`vw_BatteryEarlyWarning.sql`](vw_BatteryEarlyWarning.sql) — combines diagnostics and historical high-temperature days into an illustrative four-flag investigation score; depends on **BatteryDiagnostics**.
 4. [`vw_BatteryIntegratedAnalytics.sql`](vw_BatteryIntegratedAnalytics.sql) — lifecycle-normalised decline and chemistry-specific 75th-percentile fast-charging exposure; depends on **BatteryEarlyWarning**.
 
-Also published: [`Day1_SQL_Server_Exercises.sql`](Day1_SQL_Server_Exercises.sql), the starter exercises.
+Also published: [`Data_Quality_and_KPI_Validation.sql`](Data_Quality_and_KPI_Validation.sql), supporting source-data checks, latest-SOH calculations, charging-session counts and temperature-exposure validation. This is a **validation query script**, separate from the four reusable view definitions.
 
 ## Reproduction requirements
 
