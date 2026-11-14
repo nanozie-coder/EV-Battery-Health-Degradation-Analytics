@@ -78,6 +78,10 @@ The three screenshots below show the Power BI report pages built from **syntheti
 
 [**Download EV Battery Day 1 Workbook (.xlsx)**](excel/EV_Battery_Day1_Workbook.xlsx) — supporting Excel workbook for initial battery data exploration and KPI exercises. The synthetic raw datasets are maintained separately in [`data/`](data/).
 
+## Jupyter analysis notebook
+
+[**Open completed EV Battery Health & Degradation Jupyter Notebook (.ipynb)**](notebooks/EV_Battery_Health_Degradation_Analysis.ipynb) — the author's working notebook, uploaded alongside the standalone [Python validation script](analysis/run_analysis.py). The file has been verified in GitHub, but has not been independently re-executed from this repository.
+
 ## Technical workflow
 
 1. **Excel** — data familiarisation, basic quality checks and KPI exercises.
@@ -94,7 +98,7 @@ python -m pip install pandas numpy scipy matplotlib
 python analysis/run_analysis.py
 ```
 
-The script reads `data/*.csv` and regenerates analytical tables and a summary JSON in `analysis/`. The three Power BI dashboard screenshots are published above. Additional Python figures and the tested notebook are still in the local portfolio package and have not yet been uploaded to GitHub.
+The script reads `data/*.csv` and regenerates analytical tables and a summary JSON in `analysis/`. The three Power BI dashboard screenshots are published above. Additional Python figures have not yet been uploaded; the [author's Jupyter notebook](notebooks/EV_Battery_Health_Degradation_Analysis.ipynb) is now in GitHub, though execution has not been independently retested.
 
 ## Repository structure
 
@@ -110,6 +114,9 @@ EV_Battery_Analytics/
 │   └── DATA_DICTIONARY.md
 ├── analysis/
 │   └── run_analysis.py
+├── notebooks/
+│   ├── README.md
+│   └── EV_Battery_Health_Degradation_Analysis.ipynb
 ├── excel/
 │   ├── README.md
 │   └── EV_Battery_Day1_Workbook.xlsx
@@ -128,7 +135,7 @@ EV_Battery_Analytics/
 
 ## Outstanding local files to upload
 
-All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The starter SQL exercises are in `sql/`; the later SSMS view definitions have not yet been uploaded. The **engineering case-study report is available** in [`reports/`](reports/EV_Battery_Engineering_Case_Study.docx); the **Excel workbook is available** in [`excel/`](excel/EV_Battery_Day1_Workbook.xlsx); the expanded Python notebook and final SQL Server views are still pending.
+All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The starter SQL exercises are in `sql/`; the later SSMS view definitions have not yet been uploaded. The **engineering case-study report is available** in [`reports/`](reports/EV_Battery_Engineering_Case_Study.docx); the **Excel workbook is available** in [`excel/`](excel/EV_Battery_Day1_Workbook.xlsx); the [Jupyter notebook](notebooks/EV_Battery_Health_Degradation_Analysis.ipynb) is published. The final SQL Server views and additional standalone Python figures are still pending.
 
 ## Boundaries and limitations
 
