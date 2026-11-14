@@ -4,7 +4,7 @@
 - [x] Publish README and synthetic source datasets.
 - [x] Publish reproducible Python validation script.
 - [x] Upload report `EV_Battery_Engineering_Case_Study.docx` to `reports/` and link it from the README.
-- [x] Upload Excel workbook `EV_Battery_Day1_Workbook.xlsx` and link it from README.
+- [x] Upload Excel workbook `EV_Battery_Data_Exploration_and_KPI_Analysis.xlsx` and link it from README.
 - [ ] Upload five figures into `figures/` from the portfolio ZIP.
 - [x] Upload working Jupyter notebook `EV_Battery_Health_Degradation_Analysis.ipynb` (file verified; execution not independently retested).
 - [x] Publish `Data_Quality_and_KPI_Validation.sql` as the supporting data-validation script.
