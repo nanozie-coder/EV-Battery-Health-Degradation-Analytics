@@ -50,7 +50,7 @@ Additional Python chemistry-correlation and BAT-018 sensitivity charts are in th
 
 ## Power BI dashboard gallery
 
-The following are screenshots of the three Power BI report pages, built from the **synthetic** battery datasets. Click each image to see it at full size.
+The three screenshots below show the Power BI report pages built from **synthetic** battery datasets. Click an image to see it at full size. The [Power BI Desktop report file](powerbi/EV_Battery_Health_Degradation_Analytics.pbix) is also available for download and local inspection in Power BI Desktop; this repository does not host a live interactive report.
 
 ### Page 1 — Fleet Health & Early Warning
 
@@ -106,6 +106,7 @@ EV_Battery_Analytics/
 │   └── Day1_SQL_Server_Exercises.sql
 └── powerbi/
     ├── README.md
+    ├── EV_Battery_Health_Degradation_Analytics.pbix
     ├── Fleet_Health_Dashboard.png
     ├── Battery_Lifecycle_Dashboard.png
     └── Degradation_Drivers_Dashboard.png
@@ -113,7 +114,7 @@ EV_Battery_Analytics/
 
 ## Outstanding local files to upload
 
-All **three approved Power BI screenshots are published** under `powerbi/` and displayed above. The editable **Power BI `.pbix` file is still on the author's computer**, and the report has not been published as an interactive dashboard in this repository. The starter SQL exercises are in `sql/`; the later SSMS view definitions have not yet been uploaded. The engineering report, Excel workbook and expanded Python notebook are also pending.
+All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The starter SQL exercises are in `sql/`; the later SSMS view definitions have not yet been uploaded. The engineering report, Excel workbook and expanded Python notebook are also pending.
 
 ## Boundaries and limitations
 
