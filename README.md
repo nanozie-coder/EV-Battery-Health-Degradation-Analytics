@@ -24,7 +24,7 @@ How could a light-electric-vehicle battery-swap operator use operational telemet
 | Priority Review (2+ illustrative flags) | **3** |
 | Monitor (1 flag) | **5** |
 | Routine Monitoring (0 flags) | **16** |
-| High fast-charging exposure (top quartile) | **6** |
+| High fast-charging exposure (top quartile within chemistry) | **6** |
 | Mean SOH decline / 100 observed EFC, LFP | **1.147 pp** |
 | Mean SOH decline / 100 observed EFC, NMC | **1.728 pp** |
 
@@ -142,9 +142,11 @@ EV_Battery_Analytics/
     └── Degradation_Drivers_Dashboard.png
 ```
 
-## Outstanding local files to upload
+## Publication status and optional improvements
 
-All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The data-quality/KPI validation script and four final SQL Server view definitions are now published in [`sql/`](sql/README.md). The **engineering case-study report is available** in [`reports/`](reports/EV_Battery_Engineering_Case_Study.docx); the **Excel workbook is available** in [`excel/`](excel/EV_Battery_Data_Exploration_and_KPI_Analysis.xlsx); the [Jupyter notebook](notebooks/EV_Battery_Health_Degradation_Analysis.ipynb) is published. All four final SQL Server view scripts are published; additional standalone Python figures are still pending.
+**Core portfolio files are published:** synthetic datasets, Excel workbook, four SQL views and data-quality script, Python validation script, Jupyter notebook, Power BI screenshots and downloadable `.pbix`, and the engineering case-study report.
+
+The static GitHub dashboard previews do not constitute a hosted interactive Power BI report. The uploaded PBIX and notebook have not been independently opened or re-executed during this audit. The SQL view scripts require base tables to be created and synthetic CSV data imported before they can be reproduced on another SQL Server instance. Optional improvements include publishing Python statistical figures and a reusable SQL schema/import setup script.
 
 ## Boundaries and limitations
 
