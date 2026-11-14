@@ -9,7 +9,7 @@
 - [ ] Upload tested Python notebook and original working notebook (optional).
 - [ ] Add SQL Server view definitions exported from SSMS; distinguish them from starter exercises.
 - [x] Upload three reviewed Power BI dashboard screenshots.
-- [ ] Upload editable Power BI PBIX if suitable to share.
+- [x] Upload editable Power BI PBIX (confirmed present in GitHub; opening it in Desktop has not been independently retested).
 - [x] Validate GitHub README image paths after dashboard images arrive.
 - [ ] Add optional Python validation figures; those are separate from the Power BI screenshots.
 - [ ] Link completed project in LinkedIn Featured/Projects.
