@@ -57,9 +57,12 @@ pack["ScreeningClass"] = np.select(
     ["Priority Review", "Monitor"],
     default="Routine Monitoring",
 )
-pack["HighChargingExposure"] = (
-    pack.FastChargeShare_pct >= pack.FastChargeShare_pct.quantile(0.75)
+# Flag charging exposure against the 75th percentile within each chemistry,
+# matching SQL Server's PARTITION BY chemistry calculation.
+chemistry_p75 = pack.groupby("Chemistry").FastChargeShare_pct.transform(
+    lambda shares: shares.quantile(0.75)
 )
+pack["HighChargingExposure"] = pack.FastChargeShare_pct >= chemistry_p75
 pack.index.name = "battery_id"
 pack.reset_index().to_csv(OUT / "battery_level_metrics.csv", index=False)
 
