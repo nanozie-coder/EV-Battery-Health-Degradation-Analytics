@@ -1,20 +1,24 @@
-# SQL Server (T-SQL) analysis
+# SQL Server analytical views
 
-This directory contains the T-SQL work supporting the independent **synthetic EV battery health and degradation analytics** portfolio.
+Four T-SQL `CREATE VIEW` scripts exported from the working **EVBatteryAnalytics** database in SQL Server Management Studio are now published here, alongside the starter exercises.
 
-## Already published
+## Published scripts
 
-- [Day1_SQL_Server_Exercises.sql](Day1_SQL_Server_Exercises.sql) — initial SQL Server learning and exploration exercises.
+Run the view scripts in this dependency order:
 
-## Still to add
+1. [`vw_BatteryDailyTrends.sql`](vw_BatteryDailyTrends.sql) — date-level SOH, cumulative EFC, thermal and voltage-spread trends (independent).
+2. [`vw_BatteryDiagnostics.sql`](vw_BatteryDiagnostics.sql) — latest battery snapshot, SOH, resistance growth and diagnostic flags.
+3. [`vw_BatteryEarlyWarning.sql`](vw_BatteryEarlyWarning.sql) — combines diagnostics and historical high-temperature days into an illustrative four-flag investigation score; depends on **BatteryDiagnostics**.
+4. [`vw_BatteryIntegratedAnalytics.sql`](vw_BatteryIntegratedAnalytics.sql) — lifecycle-normalised decline and chemistry-specific 75th-percentile fast-charging exposure; depends on **BatteryEarlyWarning**.
 
-- Complete working **view definitions** from the author's SQL Server Management Studio (SSMS) battery analytics database, including the battery-risk-screening and charging-exposure analysis views. These have **not yet been uploaded**.
-- Optional final analysis queries that demonstrate fleet summaries and priority investigation results.
+Also published: [`Day1_SQL_Server_Exercises.sql`](Day1_SQL_Server_Exercises.sql), the starter exercises.
 
-## Export from SSMS
+## Reproduction requirements
 
-In **Object Explorer**, expand the correct battery analytics database → **Views**. For each project view, right-click → **Script View as → CREATE To → File**. Give each script a descriptive `.sql` filename and upload it here.
+These scripts use `USE [EVBatteryAnalytics]` and assume the following base tables already exist and are populated: `dbo.battery_master`, `dbo.daily_telemetry`, and `dbo.charge_events`. Their synthetic CSV sources are published in [data/](../data/).
 
-For a larger group, use **Database → Tasks → Generate Scripts**, select the relevant views, choose **schema only**, and save as a single SQL script. Inspect scripts before publishing: exclude login credentials, machine-specific file paths, connection strings and any non-synthetic business data.
+The scripts are **not** a complete database build: importing the CSVs, creating base tables, and adjusting data types are separate prerequisites. `GO` is an SSMS/sqlcmd batch separator. `CREATE VIEW` requires that the view not already exist; for an existing view, use a suitable `ALTER VIEW` or `CREATE OR ALTER VIEW` procedure.
 
-These SQL files document SQL Server code; the repository does not host a live SQL Server database. See [data](../data) for the synthetic CSV inputs and the [Power BI report](../powerbi) for dashboards.
+Screening cutoffs (SOH <90%, resistance growth ≥30%, cell spread ≥45 mV, or ≥10 days at 45°C+) are **illustrative learning thresholds**, not certified manufacturer safety limits. High fast-charging exposure is kept **separate** from the early-warning risk score. Correlations and screening scores do not establish causation or predict failure.
+
+These view definitions have been reviewed against the synthetic source data for basic logic and expected aggregate flags but have **not** been executed against a live SQL Server instance in this review.
