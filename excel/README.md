@@ -1,0 +1,9 @@
+# Excel analysis workbook
+
+Upload the prepared Excel starter workbook here:
+
+- `EV_Battery_Day1_Workbook.xlsx` — initial Excel battery data exploration and KPI exercises. **Upload pending.**
+
+For the full synthetic source datasets, see [data/](../data/). These CSVs are already in the repository and do not need to be duplicated inside the Excel folder.
+
+The workbook is a supporting exploratory learning artifact, not a substitute for the completed Power BI dashboard, engineering case study, or independently validated Python pipeline. All data is synthetic.
