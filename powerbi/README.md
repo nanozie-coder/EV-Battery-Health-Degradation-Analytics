@@ -1,4 +1,4 @@
-# Power BI dashboard — local work pending upload
+# Power BI dashboard — report file and screenshots
 
 Three pages were completed in Power BI Desktop for this independent synthetic case study:
 
@@ -6,7 +6,7 @@ Three pages were completed in Power BI Desktop for this independent synthetic ca
 2. **Battery Lifecycle & Degradation Analysis:** battery selector, SOH, EFC, temperature, voltage-spread trends and degradation KPIs.
 3. **Degradation Drivers & Risk Analysis:** scatter plots, chemistry filtering, correlation summaries and BAT-018 sensitivity exercise.
 
-**Current status:** All three approved **PNG screenshots are uploaded** in this directory and embedded in the root README. The editable `.pbix` file remains on the author's computer and has **not** yet been uploaded. These images are static dashboard previews, not an interactive published report.
+**Current status:** All three approved **PNG screenshots are uploaded** in this directory and embedded in the root README. The editable [Power BI Desktop report file](EV_Battery_Health_Degradation_Analytics.pbix) is now also uploaded. It can be downloaded and opened using Power BI Desktop. The screenshots are static previews; this is not a hosted interactive Power BI Service report. The GitHub upload confirms file presence, not that the PBIX has been independently opened or tested.
 
 Verified dashboard screenshots:
 - [Fleet Health & Early Warning](Fleet_Health_Dashboard.png)
