@@ -74,6 +74,10 @@ The three screenshots below show the Power BI report pages built from **syntheti
 
 [**Download EV Battery Engineering Case Study (Word)**](reports/EV_Battery_Engineering_Case_Study.docx) — six-page narrative report to accompany the Power BI dashboards. All findings use synthetic teaching data.
 
+## Excel analysis workbook
+
+[**Download EV Battery Day 1 Workbook (.xlsx)**](excel/EV_Battery_Day1_Workbook.xlsx) — supporting Excel workbook for initial battery data exploration and KPI exercises. The synthetic raw datasets are maintained separately in [`data/`](data/).
+
 ## Technical workflow
 
 1. **Excel** — data familiarisation, basic quality checks and KPI exercises.
@@ -106,6 +110,9 @@ EV_Battery_Analytics/
 │   └── DATA_DICTIONARY.md
 ├── analysis/
 │   └── run_analysis.py
+├── excel/
+│   ├── README.md
+│   └── EV_Battery_Day1_Workbook.xlsx
 ├── sql/
 │   └── Day1_SQL_Server_Exercises.sql
 ├── reports/
@@ -121,7 +128,7 @@ EV_Battery_Analytics/
 
 ## Outstanding local files to upload
 
-All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The starter SQL exercises are in `sql/`; the later SSMS view definitions have not yet been uploaded. The **engineering case-study report is available** in [`reports/`](reports/EV_Battery_Engineering_Case_Study.docx); the Excel workbook and expanded Python notebook are still pending.
+All **three approved Power BI screenshots and the editable `.pbix` file have been uploaded** under `powerbi/`. The PBIX is a downloadable Power BI Desktop artifact, not a live hosted interactive dashboard. The uploaded PBIX has been verified as a file in GitHub, but has not been opened or tested through this connection. The starter SQL exercises are in `sql/`; the later SSMS view definitions have not yet been uploaded. The **engineering case-study report is available** in [`reports/`](reports/EV_Battery_Engineering_Case_Study.docx); the **Excel workbook is available** in [`excel/`](excel/EV_Battery_Day1_Workbook.xlsx); the expanded Python notebook and final SQL Server views are still pending.
 
 ## Boundaries and limitations
 
