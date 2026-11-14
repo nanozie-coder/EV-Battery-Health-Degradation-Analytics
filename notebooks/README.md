@@ -1,8 +1,8 @@
 # Jupyter notebooks
 
-Upload the completed EV battery health and degradation analysis notebook here as a `.ipynb` file.
+**Published:** [EV_Battery_Health_Degradation_Analysis.ipynb](EV_Battery_Health_Degradation_Analysis.ipynb) — completed working notebook for the independent synthetic EV battery health and degradation study. The file is available on GitHub; its execution has not been independently revalidated after upload.
 
-## Recommended publication checks
+## Checks before subsequent notebook revisions
 
 1. Open the notebook in Jupyter, confirm it contains the completed analysis, and run **Kernel → Restart & Run All** if practical.
 2. Save the notebook after execution. Check that the charts and statistical outputs are present.
