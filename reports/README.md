@@ -2,9 +2,9 @@
 
 This directory contains management-ready written analyses for the **independent, synthetic EV battery analytics case study**.
 
-## Intended report
+## Published report
 
-- `EV_Battery_Engineering_Case_Study.docx` — six-page engineering case study covering objectives, methodology, analytical findings, limitations and recommendations. **Awaiting upload.**
+- [**EV_Battery_Engineering_Case_Study.docx**](EV_Battery_Engineering_Case_Study.docx) — six-page engineering case study covering objectives, methodology, analytical findings, limitations and recommendations. **Uploaded to GitHub.**
 
 All packs, readings and sites are fictional. This project is not affiliated with MOCX, Rechaj or any employer, and the training thresholds are not manufacturer-approved safety limits.
 
